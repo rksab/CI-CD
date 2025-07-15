@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://ci-cd-h555.onrender.com/api/persons'
+const url = `${import.meta.env.VITE_API_BASE_URL}/api/persons`
 
 const getPersons = () => {
     const req = axios.get(url)
