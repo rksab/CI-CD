@@ -20,7 +20,6 @@ jobs:
         run: |
           cd frontend
           npm install 
-          npx eslint . --fix
           npm run lint
           npm run build
       - name: move build file
