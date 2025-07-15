@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001/api/persons'
+const url = 'https://ci-cd-h555.onrender.com/api/persons'|| 'http://localhost:3001/api/persons'
 
 const getPersons = () => {
     const req = axios.get(url)
