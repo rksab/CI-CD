@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://ci-cd-h555.onrender.com/api/persons'
+const url = '/api/persons'
 
 const getPersons = () => {
     const req = axios.get(url)
