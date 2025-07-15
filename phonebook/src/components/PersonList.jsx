@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const PersonList = ({persons, del, fil}) => {
     return (
        <div>
@@ -15,4 +16,16 @@ const PersonList = ({persons, del, fil}) => {
        )
 }
 
+
+PersonList.propTypes = {
+  persons: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  del: PropTypes.func.isRequired,
+  fil: PropTypes.string.isRequired,
+};
 export default PersonList

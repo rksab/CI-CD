@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const Filter = ({filterPerson, fil}) => {
     return (
         <div>
@@ -9,4 +10,10 @@ const Filter = ({filterPerson, fil}) => {
 
 }
 
+Filter.propTypes = {
+    filterPerson: PropTypes.func.isRequired,
+    fil: PropTypes.string.isRequired,
+  };
+
 export default Filter
+

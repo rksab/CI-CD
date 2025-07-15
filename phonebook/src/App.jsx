@@ -48,7 +48,7 @@ const App = () => {
               setNotification(null)
             }, 5000)
           })
-          .catch((err) => {
+          .catch(() => {
             setNotification({text: `Information of ${newName} has been moved from the server.`, type: 'error'})
             setTimeout(() => {
               setNotification(null)
@@ -96,7 +96,7 @@ const delPerson = (id) => {
       setNotification(null)
       }, 5000)
     })
-    .catch((error) => {
+    .catch(() => {
       setPersons(persons.filter(p=> p.id !== id))
       setNotification({text: `Something went wrong`, type: 'error'})
       setTimeout(() => {
