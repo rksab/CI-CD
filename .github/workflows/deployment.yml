@@ -48,5 +48,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch # patch instead of the default minor
-          WITH_V: true # optional, tags will be like v1.2.3
-          DRY_RUN: false
